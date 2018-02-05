@@ -1,1 +1,1 @@
-docker build -t python-falcon .
+docker build -f Dockerfile.falcon -t python-falcon .
