@@ -1,7 +1,7 @@
 FROM python:3.6.4-alpine3.7
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-#RUN apk update && apk add build-base
+RUN apk update && apk add build-base
 
 COPY gunicorn.conf /
 COPY things.py /
