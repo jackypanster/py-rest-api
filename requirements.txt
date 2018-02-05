@@ -1,2 +1,2 @@
 falcon==1.4.1
-#bjoern==2.0.4
+bjoern==2.0.4
