@@ -174,7 +174,7 @@ class ThingsResource(object):
         # NOTE: Starting with Falcon 1.3, you can simply
         # use resp.media for this instead.
         resp.context['result'] = result
-        self.logger.info(result)
+        # self.logger.info(result)
         resp.set_header('Powered-By', 'Falcon')
         resp.status = falcon.HTTP_200
 
