@@ -1,0 +1,1 @@
+docker build -f Dockerfile.sanic -t python-sanic .
