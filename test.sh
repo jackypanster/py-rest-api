@@ -1,1 +1,1 @@
-wrk -t16 -c1000 -d60s http://127.0.0.1:8000/api
+wrk -t16 -c500 -d60s -H "authorization: custom-token" http://127.0.0.1:8000/1/things

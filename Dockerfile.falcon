@@ -11,10 +11,11 @@ COPY things.py /
 
 RUN pip3 install cython
 RUN pip3 install --no-binary :all: falcon
+RUN pip3 install requests
 RUN pip3 install gunicorn
 RUN pip3 install meinheld
 
 EXPOSE 8000
 
-CMD [ "gunicorn", "-c", "gunicorn.conf", "things:app" ]
+CMD [ "gunicorn", "--config", "gunicorn.conf", "things:app" ]
 
