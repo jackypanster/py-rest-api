@@ -1,1 +1,1 @@
-docker run -d -v /var/log:/log -p 8000:8000 --name=my-python-app python-falcon
+docker run -d -v /var/log:/log -p 8000:8000 --name=python-app-falcon python-falcon
