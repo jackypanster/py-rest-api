@@ -145,7 +145,7 @@ class ThingsResource(object):
     def __init__(self, db):
         self.db = db
         self.logger = logging.getLogger('thingsapp.' + __name__)
-        self.logger.addHandler(logging.FileHandler('test.log'))
+        self.logger.addHandler(logging.FileHandler('/log/things.json'))
         self.logger.setLevel(logging.INFO)
 
     def on_get(self, req, resp, user_id):
