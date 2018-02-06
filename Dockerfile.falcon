@@ -5,9 +5,14 @@ RUN apk update && apk add build-base
 
 COPY gunicorn.conf /
 COPY things.py /
-COPY requirements.falcon /
 
-RUN pip3 install --no-cache-dir -r requirements.falcon
+#COPY requirements.falcon /
+#RUN pip3 install --no-cache-dir -r requirements.falcon
+
+RUN pip3 install cython
+RUN pip3 install --no-binary :all: falcon
+RUN pip3 install gunicorn
+RUN pip3 install meinheld
 
 EXPOSE 8000
 
